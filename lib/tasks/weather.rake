@@ -3,4 +3,9 @@ namespace :weather do
   task morning: :environment do
     SlackService.new.daily_message
   end
+
+  desc 'Starts a listening bot'
+  task bot: :environment do
+    SlackService.new.start
+  end
 end

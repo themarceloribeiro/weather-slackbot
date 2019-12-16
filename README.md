@@ -19,8 +19,12 @@ This is a simple rails application running a slack client that can:
 
 - SlackService can be used with a single run (every day on a specific time using a scheduler with the rake task) or;
 
-- Used as a websocket client, listening the Slack channel in real time
+- Used as a websocket client, listening the Slack channel in real time (also available using a rake task)
 
-The rake task is accessible via:
+The rake task for a real time bot is accessible via:
+
+```rake weather:bot```
+
+And the task to be run as a scheduler for every day:
 
 ```rake weather:morning```
